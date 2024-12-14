@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Of Hans</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="/" class="logo">Work Of Hans</a>
+        <a href="#" class="menu"><ion-icon name="menu-outline"></ion-icon></a>
+        <ul class="nav">
+            <li><a class="nav-btn active" href="/" onclick="resetHeader();"><ion-icon
+                        name="home-outline"></ion-icon></a></li>
+            <li><a class="nav-btn" href="#" data-target="About">About</a></li>
+            <li><a class="nav-btn" href="#" data-target="Services">Services</a></li>
+            <li><a class="nav-btn" href="#" data-target="Portfolio">Portfolio</a></li>
+            <li><a class="nav-btn" href="#" data-target="Contact">Contact</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search" />
+            <ion-icon name="search-outline"></ion-icon>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner container-fluid">
+        <div class="bg-slide slide-1 active">
+            <div class="content">
+                <h1>Work Of Hans</h1>
+                <p>At Work of Hans, we specialize in transforming your special occasions into unforgettable memories.
+                    Whether it’s a dreamy wedding, an elegant birthday celebration, or a personal milestone, we bring
+                    creativity,
+                    precision, and passion to every detail. From conceptualizing themes to flawless execution, our team
+                    is dedicated
+                    to curating events that reflect your unique vision and personality. With years of experience and a
+                    commitment to
+                    excellence, we ensure that every moment is picture-perfect. Let us handle the details so you can
+                    savor the joy of
+                    your celebration. Work of Hans – where every event becomes a masterpiece.</p>
+            </div>
+            <div class="circle bg">
+                <img src="./imagess/gg.jpg" alt="Event Image" />
+                <div class="circle large">
+                    <img src="./imagess/gg.jpg" alt="Event Image" />
+                </div>
+                <div class="circle small">
+                    <img src="./imagess/gg.jpg" alt="Event Image" />
+                </div>
+            </div>
+        </div>
+        <div class="bg-slide slide-2">
+            <div class="content">
+                <h1>Wedding</h1>
+                <p>Your wedding day should be as unique and beautiful as your love story.
+                    At Work of Hans, we specialize in designing breathtaking weddings that
+                    capture the essence of your relationship. From stunning floral arrangements
+                    to elegant decor, every detail is thoughtfully planned and perfectly executed.
+                    Whether you envision a grand celebration or an intimate gathering, our expert team
+                    works tirelessly to ensure your day is seamless and unforgettable. Let us turn
+                    your dream wedding into reality, so you can focus on creating memories that will last a lifetime.
+                    Work of Hans – because every love story deserves a perfect beginning.</p>
+            </div>
+            <div class="circle bg">
+                <img src="./imagess/you.jpg" alt="Wedding Image" />
+                <div class="circle large">
+                    <img src="./imagess/you.jpg" alt="Wedding Image" />
+                </div>
+                <div class="circle small">
+                    <img src="./imagess/you.jpg" alt="Wedding Image" />
+                </div>
+            </div>
+        </div>
+        <div class="bg-slide slide-3">
+            <div class="content">
+                <h1>Birthday</h1>
+                <p>Make your birthday a celebration to remember with Work of Hans.
+                    Whether it's a fun-filled party for kids, a glamorous milestone celebration,
+                    or an intimate gathering with loved ones, we bring your vision to life.
+                    From creative themes to captivating decor and seamless coordination, every element
+                    is crafted to reflect your unique style and personality. Let us handle the details
+                    while you focus on enjoying your special day. Work of Hans – turning birthdays into
+                    unforgettable moments of joy, laughter, and love.</p>
+            </div>
+            <div class="circle bg">
+                <img src="./imagess/and.jpg" alt="Birthday Image" />
+                <div class="circle large">
+                    <img src="./imagess/and.jpg" alt="Birthday Image" />
+                </div>
+                <div class="circle small">
+                    <img src="./imagess/and.jpg" alt="Birthday Image" />
+                </div>
+            </div>
+        </div>
+        <div class="bg-slide slide-4">
+            <div class="content">
+                <h1>Personal Events</h1>
+                <p>At Work of Hans, we specialize in designing personal events that reflect your individuality.
+                    Whether it's an anniversary, graduation, family reunion, or a private dinner,
+                    we craft every detail with care and creativity. From conceptualizing themes to flawless execution,
+                    our goal is to turn your ideas into extraordinary moments. No matter the size or style,
+                    we ensure your event feels uniquely yours. Work of Hans – where personal milestones become
+                    unforgettable memories.</p>
+            </div>
+            <div class="circle bg">
+                <img src="./imagess/l.jpg" alt="Personal Event Image" />
+                <div class="circle large">
+                    <img src="./imagess/l.jpg" alt="Personal Event Image" />
+                </div>
+                <div class="circle small">
+                    <img src="./imagess/l.jpg" alt="Personal Event Image" />
+                </div>
+            </div>
+        </div>
+
+        <ul class="slide-loader">
+            <li><a class="slide-btn active" data-target="slide-1">1</a></li>
+            <li><a class="slide-btn" data-target="slide-2">2</a></li>
+            <li><a class="slide-btn" data-target="slide-3">3</a></li>
+            <li><a class="slide-btn" data-target="slide-4">4</a></li>
+        </ul>
+        <div class="share">
+            <p>Share</p>
+            <a href="#"><ion-icon name="share-social-outline"></ion-icon></a>
+        </div>
+
+        <div class="lead">
+            <svg viewBox="0 0 100 100" width="100" height="100">
+                <defs>
+                    <path id="circle" d=" 
+                    M 50, 50
+                    m -37, 0
+                    a 37,37 0 1,1 74,0
+                    a 37,37 0 1,1 -74,0" />
+                </defs>
+                <text font-size="17" fill="#ffffff">
+                    <textPath xlink:href="#circle">
+                        Click or Scroll... to See More...
+                    </textPath>
+                </text>
+            </svg>
+            <a href="#" class="move-down" onclick="initNavigation();">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+
+    <!--Main-->
+    <main>
+        <!--Section-->
+        <section id="About" class="About">
+            <div class="container">
+                <div class="row">
+                    <h1>About Us</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="img-box">
+                            <img src="./imagess/kt.jpg" alt="" class="img-fluid">
+                            <img src="./imagess/mk.jpg" alt="" class="corner-img" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./imagess/per-removebg-preview.png" alt="" class="section-bg-img" />
+                        <h4>Welcome to Work of Hans</h4>
+                        <p>
+                            Your trusted partner in creating unforgettable moments.
+                            Specializing in crafting bespoke events, we bring your visions to life with creativity,
+                            precision, and passion. Whether it’s a dreamy wedding, a spectacular birthday celebration,
+                            or a personal milestone, we are committed to turning your special occasion into a beautiful,
+                            seamless experience. With years of experience in the event planning industry, our team works
+                            closely with you to
+                            understand your style, preferences, and needs. From the initial concept to flawless
+                            execution, we focus on every detail, ensuring that your event is truly one-of-a-kind. At
+                            Work of Hans, we believe that every event should be as unique as the people it celebrates,
+                            and we strive to make every moment memorable.
+                        <p>
+                            Let us handle the planning and details while you relax and enjoy the celebration. Trust Work
+                            of Hans to make your event a masterpiece.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Services Section-->
+        <section id="Services" class="Services">
+            <div class="container">
+                <div class="row">
+                    <h1>Our Services</h1>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="img-box">
+                            <img src="./imagess/ww.jpg" alt="" />
+                        </div>
+                        <div class="details">
+                            <h4>Wedding Plan</h4>
+                            <p>
+                                At Work of Hans, we transform your wedding dreams into reality. From breathtaking
+                                decor to seamless coordination, our expert team ensures every detail reflects your
+                                unique love story. Whether you envision a grand celebration or an intimate
+                                gathering, we handle everything with care and precision, so you can focus on
+                                cherishing every moment. Let us craft a wedding as beautiful and unforgettable as
+                                your love.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-box">
+                            <img src="./imagess/dhi.jpg" alt="" />
+                        </div>
+                        <div class="details">
+                            <h4>Birthday Plan</h4>
+                            <p>
+                                Make your birthday unforgettable with Work of Hans. Whether it's a cozy gathering or a
+                                grand celebration, we bring your vision to life with creative themes, stunning decor,
+                                and seamless coordination. Let us handle the details while you enjoy a day filled with
+                                joy, laughter, and cherished memories.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-box">
+                            <img src="./imagess/da.jpg" alt="" />
+                        </div>
+                        <div class="details">
+                            <h4>Personal Plan</h4>
+                            <p>
+                                Celebrate your special milestones with Work of Hans. From intimate anniversaries to
+                                grand family reunions, we design personalized events that reflect your unique style.
+                                With attention to detail, creative planning, and flawless execution, we turn your
+                                personal moments into unforgettable memories. Let us make your celebration truly yours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Portfolio-->
+        <section id="portfolio" class="Portfolio">
+            <div class="container">
+                <div class="row">
+                    <h1>Our Portfolio</h1>
+                </div>
+               <ul id="portfolio-filters"class="d-flex justify-content-center">
+                    <li data-filter="*" class="filter-active">ALL</li>
+                    <li data-filter=".filter-wedding">Wedding</li>
+                    <li data-filter=".filter-birthday">Birthday</li>
+                    <li data-filter=".filter-personal">Personal</li>
+                </ul>
+                
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/ddd.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/ddd.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <!--Wedding Section-->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/df.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/df.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/dfg.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/dfg.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/ewew.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/ewew.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/ff.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/ff.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/hp.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/hp.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/ii.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/ii.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/iii.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/iii.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/im.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/im.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/jgh.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/jgh.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/pi.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/pi.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/pill.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/pill.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/qww.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/qww.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/re.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/re.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/sf.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/sf.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/sg.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/sg.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/w.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/w.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/wer.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/wer.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/wnj.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/wnj.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/yte.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding A</h4>
+                            <p>Wedding a</p>
+                            <a 
+                                href="./imagess/WedPort/yte.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!--Birthday Section-->
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/mk.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/mk.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/zfg.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/zfg.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/ncx+.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/ncx+.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/dju.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/dju.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/hfh.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/hfh.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/thh.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/thh.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/dhd.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/dhd.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/otl.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/otl.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/kgk.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/kgk.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/mg.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/mg.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/dhi.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/dhi.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/afk.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/afk.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/twe.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/twe.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/hdh.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/hdh.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/tsk.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/tsk.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/af.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/af.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/gsg.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/gsg.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/zh.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/zh.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/ljl.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/ljl.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/hoo.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/hoo.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/vzv.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/vzv.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/jjj.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/jjj.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/bn.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/bn.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/fm.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/fm.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/kk.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/kk.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/sgs.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/sgs.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/pu.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Birthday A</h4>
+                            <p>Birthday</p>
+                            <a 
+                                href="./imagess/WedPort/pu.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!--Personal event-->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/nm.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/nm.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/bx.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/bx.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/gd.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/gd.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/fj.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/fj.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/qhd.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/qhd.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/ere.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/ere.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/dj.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/dj.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/kt.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/kt.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/gkg.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/gkg.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/gh.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/gh.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/yi.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/yi.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/yt.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/yt.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/u.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/u.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/uy.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/uy.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/i.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/i.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/ng.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/h.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/h.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/h.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/tes.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/tes.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/or.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/or.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/l.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/l.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/cv.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/cv.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/t.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/t.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/ets.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/ets.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid"
+                            src="./imagess/WedPort/do.jpg" alt="">
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Personal Event</h4>
+                            <p>Personal</p>
+                            <a 
+                                href="./imagess/WedPort/do.jpg"
+                                data-gallery="portfolioGalerry"
+                                class="portfolio-lightbox preview-link"
+                                title="Wedding A">
+
+                                <ion-icon name="add-outline"></ion-icon>
+                            </a>
+                            <a href="#" class="details-link" title="More Details">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Contact-->
+        <section id="Contact" class="Contact"></section>
+    </main>
+
+    <!--Main End-->
+    <!-- JavaScript Vendors -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- Customised Java-->
+     <script src="isotope.js"></script>
+     <script src="glightbox.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
